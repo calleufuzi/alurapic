@@ -25,7 +25,7 @@ export class PhotoListComponent implements OnInit, OnDestroy {
     private activatedRoute: ActivatedRoute,
     private photoService: PhotoService){}
 
-  ngOnInit(){\
+  ngOnInit(){
     this.userName = this.activatedRoute.snapshot.params.userName;
     this.photos = this.activatedRoute.snapshot.data.photos;
     this.debounce
